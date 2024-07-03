@@ -21,19 +21,35 @@ function Footer() {
             </Typography>
           </Box>
           <Box sx={{ display: "flex" }}>
-            <img
-              src={ebayIcon}
-              alt="eBay"
-              style={{ width: 70, marginRight: 8 }}
-            />
-            <IconButton aria-label="Instagram" color="inherit">
+            <a
+              href="https://www.ebay.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={ebayIcon}
+                alt="eBay"
+                style={{ width: 70, marginRight: 8 }}
+              />
+            </a>
+
+            <IconButton
+              aria-label="Instagram"
+              color="inherit"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <InstagramIcon />
             </IconButton>
-            <IconButton aria-label="Facebook" color="inherit">
+            <IconButton
+              aria-label="Facebook"
+              color="inherit"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FacebookIcon />
-            </IconButton>
-            <IconButton aria-label="Twitter" color="inherit">
-              <TwitterIcon />
             </IconButton>
           </Box>
         </Toolbar>
