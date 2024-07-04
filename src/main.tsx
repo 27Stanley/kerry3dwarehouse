@@ -6,10 +6,14 @@ import "./index.css";
 import { ThemeProvider } from "@mui/material";
 import Theme from "./themes/Theme";
 
+import { BrowserRouter } from "react-router-dom";
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider theme={Theme}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
 );

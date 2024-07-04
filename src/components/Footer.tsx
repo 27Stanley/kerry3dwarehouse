@@ -6,7 +6,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import ebayIcon from "./assets/EBay_logo.png";
+
+import ebayIcon from "../assets/EBay_logo.png";
 
 function Footer() {
   return (

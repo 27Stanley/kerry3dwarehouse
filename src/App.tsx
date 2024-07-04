@@ -1,22 +1,30 @@
-import { useState } from "react";
 import "./App.css";
+import { Route, Routes } from "react-router";
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+//Routes
+import Landing from "./screens/Landing";
+import About from "./screens/About";
+import Basket from "./screens/Basket";
+import CustomQuotes from "./screens/CustomQuotes";
+import Product from "./screens/Product";
+import ShoppingCart from "./screens/ShoppingCart";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
         <Header />
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-        </div>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="About" element={<About />} />
+          <Route path="Basket" element={<Basket />} />
+          <Route path="CustomQuotes" element={<CustomQuotes />} />
+          <Route path="Product" element={<Product />} />
+          <Route path="ShoppingCart" element={<ShoppingCart />} />
+        </Routes>
         <Footer />
       </div>
     </>
