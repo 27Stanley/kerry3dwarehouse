@@ -5,3 +5,5 @@ Firebase to handle backend user information, authentication and other functional
 Material UI for a polished front end, Framer Motion and Three.js for entertaining and engaging animations to showcase products.
 
 Integrating Stripe payments ensure secure and efficient transactions.
+
+Implementing, local storage, sessions and cookies to save user specific data on server and client.
