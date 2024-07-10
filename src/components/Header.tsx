@@ -21,7 +21,6 @@ const pages = [
 const settings = [
   { label: "Profile", path: "/Profile" },
   { label: "Account", path: "/Account" },
-  { label: "Cart", path: "/ShoppingCart" },
   { label: "Logout", path: "/Logout" }
 ];
 

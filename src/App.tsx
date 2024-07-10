@@ -13,6 +13,14 @@ import Products from "./screens/Products";
 import ShoppingCart from "./screens/ShoppingCart";
 import EachProduct from "./screens/EachProduct";
 
+//User Routes
+//profile, account, logout
+import Account from "./screensUser/Account";
+import Logout from "./screensUser/Logout";
+import Profile from "./screensUser/Profile";
+
+
+
 function App() {
   return (
     <>
@@ -28,6 +36,10 @@ function App() {
           <Route path="/Products/:productId" element = {<EachProduct />} />
 
           <Route path="/ShoppingCart" element={<ShoppingCart />} />
+
+          <Route path="Account" element={<Account/>}/>
+          <Route path="Profile" element={<Profile/>}/>
+          <Route path="Logout" element={<Logout/>}/>
         </Routes>
         <Footer />
       </div>
