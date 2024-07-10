@@ -9,8 +9,9 @@ import Landing from "./screens/Landing";
 import About from "./screens/About";
 import Basket from "./screens/Basket";
 import CustomQuotes from "./screens/CustomQuotes";
-import Product from "./screens/Product";
+import Products from "./screens/Products";
 import ShoppingCart from "./screens/ShoppingCart";
+import EachProduct from "./screens/EachProduct";
 
 function App() {
   return (
@@ -19,11 +20,14 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="About" element={<About />} />
-          <Route path="Basket" element={<Basket />} />
-          <Route path="CustomQuotes" element={<CustomQuotes />} />
-          <Route path="Product" element={<Product />} />
-          <Route path="ShoppingCart" element={<ShoppingCart />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Basket" element={<Basket />} />
+          <Route path="/CustomQuotes" element={<CustomQuotes />} />
+          <Route path="/Products" element={<Products />} />
+
+          <Route path="/Products/:productId" element = {<EachProduct />} />
+
+          <Route path="/ShoppingCart" element={<ShoppingCart />} />
         </Routes>
         <Footer />
       </div>
