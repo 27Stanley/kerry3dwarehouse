@@ -14,11 +14,12 @@ import ShoppingCart from "./screens/ShoppingCart";
 import EachProduct from "./screens/EachProduct";
 
 //User Routes
-//profile, account, logout
 import Account from "./screensUser/Account";
 import Logout from "./screensUser/Logout";
 import Profile from "./screensUser/Profile";
 
+//Admin Routes
+import AdminDashboard from "./screensAdmin/Dashboard";
 
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
           <Route path="Account" element={<Account/>}/>
           <Route path="Profile" element={<Profile/>}/>
           <Route path="Logout" element={<Logout/>}/>
+
+          <Route path="AdminDashboard" element={<AdminDashboard/>} />
         </Routes>
         <Footer />
       </div>
