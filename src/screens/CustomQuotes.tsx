@@ -1,41 +1,48 @@
 type Props = {};
 
-import React, { useState } from 'react';
-import { Button, TextField, Typography, Container, Grid } from '@mui/material';
+import React, { useState } from "react";
+import { Button, TextField, Typography, Container, Grid } from "@mui/material";
 
 const CustomQuotes: React.FC = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [file, setFile] = useState<File | null>(null);
-  const [link, setLink] = useState('');
-  const [addtionalInfo, setAddtionalInfo] = useState('');
+  const [link, setLink] = useState("");
+  const [addtionalInfo, setAddtionalInfo] = useState("");
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    if (file) {
-      formData.append('file', file);
-    }
-    formData.append('link', link);
-    
 
-    const response = await fetch('/api/send-email', {
-      method: 'POST',
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    if (file) {
+      formData.append("file", file);
+    }
+    formData.append("link", link);
+
+    const response = await fetch("/api/send-email", {
+      method: "POST",
       body: formData,
     });
 
     if (response.ok) {
-      alert('Request submitted successfully!');
+      alert("Request submitted successfully!");
     } else {
-      alert('Failed to submit request.');
+      alert("Failed to submit request.");
     }
   };
 
   return (
-    <Container maxWidth="sm" style={{ height: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+    <Container
+      maxWidth="sm"
+      style={{
+        height: "90vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
       <Typography variant="h4" gutterBottom>
         Request a Custom Quote
       </Typography>
@@ -61,10 +68,7 @@ const CustomQuotes: React.FC = () => {
             />
           </Grid>
           <Grid item xs={12}>
-            <Button
-              variant="contained"
-              component="label"
-            >
+            <Button variant="contained" component="label">
               Upload File
               <input
                 type="file"
@@ -88,7 +92,7 @@ const CustomQuotes: React.FC = () => {
             </Button>
           </Grid>
           <Grid item xs={12}>
-          <TextField
+            <TextField
               label="Additional Information?"
               fullWidth
               value={addtionalInfo}

@@ -14,14 +14,14 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = [
-  { label: "Products", path: "/Products" },
+  { label: "Catalogue", path: "/Catalogue" },
   { label: "Get a Quote", path: "/CustomQuotes" },
-  { label: "Who We Are", path: "/About" }
+  { label: "Who We Are", path: "/About" },
 ];
 const settings = [
   { label: "Profile", path: "/Profile" },
   { label: "Account", path: "/Account" },
-  { label: "Logout", path: "/Logout" }
+  { label: "Logout", path: "/Logout" },
 ];
 
 function ResponsiveAppBar() {
@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ margin: 0, padding: 0 }}>
       <Container maxWidth={false}>
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -123,7 +123,10 @@ function ResponsiveAppBar() {
               {settings.map((setting) => (
                 <MenuItem key={setting.label} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">
-                    <Link to={setting.path} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link
+                      to={setting.path}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
                       {setting.label}
                     </Link>
                   </Typography>
