@@ -19,21 +19,21 @@ export default function About({}: Props) {
         justifyContent: "center",
       }}
     >
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h2" gutterBottom>
         Who We Are
       </Typography>
       <Divider />
-      <Typography variant="h2" gutterBottom>
+      <Typography variant="h4" gutterBottom>
         Iconic Designs Meeting Premium Construction
       </Typography>
       <Typography variant="body1" paragraph>
-        For over a decade, Kerry 3D Warehouse has been at the forefront of
-        creating world-renowned 3D-printed products.
+        Starting 2024, Kerry 3D Warehouse is at the forefront of creating
+        outstanding 3D-printed products.
       </Typography>
       <Typography variant="body1" paragraph>
-        Designing and printing contemporary, functional trinkets. Engineered to
-        be engagin and meet the diverse demands of your lifestyle. We take our
-        commitment to quality and innovation very seriously.
+        Designing and printing contemporary, functional PLA trinkets. Engineered
+        to be engaging and meet the diverse demands of your lifestyle. We take
+        our commitment to quality and innovation very seriously.
       </Typography>
       <Typography variant="body1" paragraph>
         Your 3D-printed product is your companion in every creative endeavor. It
