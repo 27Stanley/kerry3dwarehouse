@@ -5,13 +5,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 //Routes
-import Landing from "./screens/Landing";
-import About from "./screens/About";
-import Basket from "./screens/Basket";
-import CustomQuotes from "./screens/CustomQuotes";
-import Catalogue from "./screens/Catalogue";
-import ShoppingCart from "./screens/ShoppingCart";
-import EachProduct from "./screens/EachProduct";
+import Landing from "./screensClient/Landing";
+import About from "./screensClient/About";
+import Basket from "./screensClient/Basket";
+import CustomQuotes from "./screensClient/CustomQuotes";
+import Catalogue from "./screensClient/Catalogue";
+import ShoppingCart from "./screensClient/ShoppingCart";
+import EachProduct from "./screensClient/EachProduct";
 
 //User Routes
 import Account from "./screensUser/Account";
@@ -41,7 +41,7 @@ function App() {
           <Route path="Profile" element={<Profile />} />
           <Route path="Logout" element={<Logout />} />
 
-          <Route path="AdminDashboard" element={<AdminDashboard />} />
+          <Route path="adminDashboardSuper" element={<AdminDashboard />} />
         </Routes>
         <Footer />
       </div>

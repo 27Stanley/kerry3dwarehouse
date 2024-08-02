@@ -23,9 +23,6 @@ export default function About({}: Props) {
         Who We Are
       </Typography>
       <Divider />
-      <Typography variant="h4" gutterBottom>
-        Iconic Designs Meeting Premium Construction
-      </Typography>
       <Typography variant="body1" paragraph>
         Starting 2024, Kerry 3D Warehouse is at the forefront of creating
         outstanding 3D-printed products.
