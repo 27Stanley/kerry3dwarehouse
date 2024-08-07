@@ -12,6 +12,7 @@ import CustomQuotes from "./screensClient/CustomQuotes";
 import Catalogue from "./screensClient/Catalogue";
 import ShoppingCart from "./screensClient/ShoppingCart";
 import EachProduct from "./screensClient/EachProduct";
+import Login from "./screensClient/Login";
 
 //User Routes
 import Account from "./screensUser/Account";
@@ -32,6 +33,7 @@ function App() {
           <Route path="/Basket" element={<Basket />} />
           <Route path="/CustomQuotes" element={<CustomQuotes />} />
           <Route path="/Catalogue" element={<Catalogue />} />
+          <Route path="Login" element={<Login />} />
 
           <Route path="/Catalogue/:productId" element={<EachProduct />} />
 
